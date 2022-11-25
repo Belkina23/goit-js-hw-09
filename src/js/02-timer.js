@@ -48,13 +48,6 @@ const options = {
 
 flatpickr('#datetime-picker', options);
 
-function viewOfTimer({ days, hours, minutes, seconds }) {
-  refs.dataDays.textContent = `${days}`;
-  refs.dataHours.textContent = `${hours}`;
-  refs.dataMinutes.textContent = `${minutes}`;
-  refs.dataSeconds.textContent = `${seconds}`;
-}
-
 function addLeadingZero(value) {
   return String(value).padStart(2, '0');
 }
@@ -71,4 +64,11 @@ function convertMs(ms) {
   const seconds = addLeadingZero(Math.floor((((ms % day) % hour) % minute) / second));
 
   return { days, hours, minutes, seconds };
+}
+
+function viewOfTimer({ days, hours, minutes, seconds }) {
+  refs.dataDays.textContent = `${days}`;
+  refs.dataHours.textContent = `${hours}`;
+  refs.dataMinutes.textContent = `${minutes}`;
+  refs.dataSeconds.textContent = `${seconds}`;
 }
