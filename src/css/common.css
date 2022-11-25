@@ -21,7 +21,7 @@ img {
 button[data-start] {
   border: 2px solid black;
   border-radius: 6px;
-  padding: 20px 50px;
+  padding: 10px 50px;
   font-size: 30px;
   background-color: rgb(217, 255, 0);
   font-weight: 700;
@@ -31,9 +31,29 @@ button[data-start] {
 button[data-stop] {
   border: 2px solid black;
   border-radius: 6px;
-  padding: 20px 60px;
+  padding: 10px 60px;
   font-size: 30px;
   background-color: rgb(71, 244, 250);
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.timer {
+  display: flex;
+  gap: 50px;
+  background-color: rgb(135, 183, 222);
+  justify-content: center;
+  padding: 25px;
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+input {
+  padding: 20px;
+  background-color: rgb(79, 211, 38);
+  border-radius: 6px;
+  border: none;
+  font-style: normal;
+  color: black;
 }
