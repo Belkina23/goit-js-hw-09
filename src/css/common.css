@@ -16,3 +16,24 @@ img {
   display: block;
   max-width: 100%;
 }
+
+
+button[data-start] {
+  border: 2px solid black;
+  border-radius: 4px;
+  padding: 20px 50px;
+  font-size: 30px;
+  background-color: rgb(217, 255, 0);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+button[data-stop] {
+  border: 2px solid black;
+  border-radius: 4px;
+  padding: 20px 60px;
+  font-size: 30px;
+  background-color: rgb(71, 244, 250);
+  font-weight: 700;
+  text-transform: uppercase;
+}
