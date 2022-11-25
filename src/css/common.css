@@ -57,3 +57,11 @@ input {
   font-style: normal;
   color: black;
 }
+
+label {
+  font-size: 20px;
+}
+
+button[submit] {
+  padding: 15px;
+}
